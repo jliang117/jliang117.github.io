@@ -30,7 +30,10 @@ map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
                 var marker = new google.maps.Marker({
                 position: myLatlng,
                 map: map,
-                title: value.title
+                title: value.title,
+                label:{
+                    fontSize: "20px"
+                }
                 });
                 var details = value.description;
                 bindInfoWindow(marker, map, infoWindow, details);
