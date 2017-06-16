@@ -16,7 +16,7 @@ var infoWindow = new google.maps.InfoWindow();
 var map;
 function initialize() {
 var mapOptions = {
-zoom: 13,
+zoom: 14,
 center: new google.maps.LatLng(40.74,-73.98),
 mapTypeId: google.maps.MapTypeId.ROADMAP
 };
@@ -32,7 +32,7 @@ map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
                 map: map,
                 title: value.title,
                 label:{
-                    fontSize: "20px"
+                    fontSize: "23px"
                 }
                 });
                 var details = value.description;
