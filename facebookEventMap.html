@@ -25,22 +25,25 @@ map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
 
     $.getJSON('fbEventJson.json', function(json1) {
         $.each(json1.events, function(indexone, firstlevel) {
-            var thisEvent = this; //save ref to outer event and dive into nested JSON
             //console.log("thisSecondVenue:" + JSON.stringify(firstlevel));
-            console.log("thisSecondVenueLong:" + JSON.stringify(firstlevel['venue']['location']['longitude']));
-            console.log("thisSecondVenueLat:" + JSON.stringify(firstlevel['venue']['location']['latitude']));
+            var lat = JSON.stringify(firstlevel['venue']['location']['latitude'];
+            var long = JSON.stringify(firstlevel['venue']['location']['longitude'];
+            var name = JSON.stringify(firstlevel['name']);
+            var desc = JSON.stringify(firstlevel['description']);
+            console.log("thisSecondVenueLong:" + long));
+            console.log("thisSecondVenueLat:" + lat));
             console.log("Name:"+firstlevel['name']);
             console.log("Desc:"+firstlevel['description']);
-            var myLatlng = new google.maps.LatLng(firstlevel['venue']['location']['longitude'], firstlevel['venue']['location']['latitude']);
+            var myLatlng = new google.maps.LatLng(lat,long);
             var marker = new google.maps.Marker({
                 position: myLatlng,
                 map: map,
-                title: firstlevel['name'],
+                title: name,
                 label: {
                     fontSize: "30px"
                 }
             });
-            var details = firstlevel['description'];
+            var details = desc;
             bindInfoWindow(marker, map, infoWindow, details);
         });
     });
