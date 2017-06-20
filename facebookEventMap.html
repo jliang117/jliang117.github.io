@@ -33,12 +33,12 @@ map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
             var marker = new google.maps.Marker({
                 position: myLatlng,
                 map: map,
-                title: thisEvent.title,
+                title: firstlevel['name'],
                 label: {
                     fontSize: "30px"
                 }
             });
-            var details = thisEvent.description;
+            var details = firstlevel['description'];
             bindInfoWindow(marker, map, infoWindow, details);
 
 
