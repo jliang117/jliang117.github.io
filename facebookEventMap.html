@@ -24,24 +24,29 @@ mapTypeId: google.maps.MapTypeId.ROADMAP
 map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
 
     $.getJSON('fbEventJson.json', function(json1) {
-            $.each(json1.events, function(i, firstlevel) {
-                    var thisEvent = this; //save ref to outer event and dive into nested JSON
-                    console.log("thisEvent:"+JSON.stringify(thisEvent));
-                    $.each(thisEvent.venue, function(i, j) {
-                        var myLatlng = new google.maps.LatLng(j.latitude, j.longitude);
-                        var marker = new google.maps.Marker({
-                            position: myLatlng,
-                            map: map,
-                            title: thisEvent.title,
-                            label: {
-                                fontSize: "30px"
-                            }
-                        });
-                        var details = thisEvent.description;
-                        bindInfoWindow(marker, map, infoWindow, details);
+        $.each(json1.events, function(indexone, firstlevel) {
+            var thisEvent = this; //save ref to outer event and dive into nested JSON
+            console.log("thisEvent:" + JSON.stringify(thisEvent));
+            $.each(thisEvent.venue, function(indextwo, secondlevel) {
+                console.log("thisSecondVenue:"+JSON.stringify(this));
+                $.each(secondlevel.location, function(indexthree, thirdlevel) {
+                    console.log("thisThirdLocation:"+JSON.stringify(this));
+                    var myLatlng = new google.maps.LatLng(thirdlevel.latitude, thirdlevel.longitude);
+                    var marker = new google.maps.Marker({
+                        position: myLatlng,
+                        map: map,
+                        title: thisEvent.title,
+                        label: {
+                            fontSize: "30px"
+                        }
                     });
+                    var details = thisEvent.description;
+                    bindInfoWindow(marker, map, infoWindow, details);
+                });
 
             });
+
+        });
     });
 
 
