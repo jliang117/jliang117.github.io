@@ -24,13 +24,15 @@ mapTypeId: google.maps.MapTypeId.ROADMAP
 map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
 
     $.getJSON('fbEventJson.json', function(json1) {
-        $.each(json1.events, function(indexone, firstlevel) {
+        $.each(json1, function(indexone, firstlevel) {
             var thisEvent = this; //save ref to outer event and dive into nested JSON
             console.log("thisEvent:" + JSON.stringify(thisEvent));
-            $.each(thisEvent.venue, function(indextwo, secondlevel) {
+            $.each(firstlevel, function(indextwo, secondlevel) {
                 console.log("thisSecondVenue:"+JSON.stringify(this));
-                $.each(secondlevel.location, function(indexthree, thirdlevel) {
+                $.each(secondlevel, function(indexthree, thirdlevel) {
                     console.log("thisThirdLocation:"+JSON.stringify(this));
+                    console.log("lat:"+JSON.stringify(thirdlevel['latitude']));
+                    console.log("long:"+JSON.stringify(thirdlevel['longitude']));
                     var myLatlng = new google.maps.LatLng(thirdlevel.latitude, thirdlevel.longitude);
                     var marker = new google.maps.Marker({
                         position: myLatlng,
