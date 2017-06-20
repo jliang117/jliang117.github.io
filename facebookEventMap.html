@@ -24,30 +24,23 @@ mapTypeId: google.maps.MapTypeId.ROADMAP
 map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
 
     $.getJSON('fbEventJson.json', function(json1) {
-        $.each(json1, function(indexone, firstlevel) {
+        $.each(json1.events, function(indexone, firstlevel) {
             var thisEvent = this; //save ref to outer event and dive into nested JSON
-            $.each(firstlevel, function(indextwo, secondlevel) {
-                console.log("thisSecondVenue:"+JSON.stringify(secondlevel));
-                console.log("thisSecondVenueLong:"+JSON.stringify(secondlevel['venue']['longitude']));
-                console.log("thisSecondVenueLat:"+JSON.stringify(secondlevel['venue']['latitude']));
-                $.each(secondlevel.venue, function(indexthree, thirdlevel) {
-                    console.log("thisThirdLocation:"+JSON.stringify(thirdlevel));
-                    console.log("lat:"+JSON.stringify(thirdlevel['latitude']));
-                    console.log("long:"+JSON.stringify(thirdlevel['longitude']));
-                    var myLatlng = new google.maps.LatLng(thirdlevel.latitude, thirdlevel.longitude);
-                    var marker = new google.maps.Marker({
-                        position: myLatlng,
-                        map: map,
-                        title: thisEvent.title,
-                        label: {
-                            fontSize: "30px"
-                        }
-                    });
-                    var details = thisEvent.description;
-                    bindInfoWindow(marker, map, infoWindow, details);
-                });
-
+            console.log("thisSecondVenue:" + JSON.stringify(firstlevel));
+            console.log("thisSecondVenueLong:" + JSON.stringify(firstlevel['venue']['location']['longitude']));
+            console.log("thisSecondVenueLat:" + JSON.stringify(firstlevel['venue']['location']['latitude']));
+            var myLatlng = new google.maps.LatLng(firstlevel['venue']['location']['longitude'], firstlevel['venue']['location']['latitude']);
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                title: thisEvent.title,
+                label: {
+                    fontSize: "30px"
+                }
             });
+            var details = thisEvent.description;
+            bindInfoWindow(marker, map, infoWindow, details);
+
 
         });
     });
