@@ -29,7 +29,7 @@ map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
                     var locations = value.title
                     console.log("thisEvent:"+JSON.stringify(thisEvent));
                     console.log("thisLocation check nonref:"+JSON.stringify(locations))
-                    $.each(thisEvent, function(i, j) {
+                    $.each(thisEvent.location, function(i, j) {
 
                         var myLatlng = new google.maps.LatLng(j.latitude, j.longitude);
                         var marker = new google.maps.Marker({
