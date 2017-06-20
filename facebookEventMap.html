@@ -39,9 +39,7 @@ map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
                 position: myLatlng,
                 map: map,
                 title: name,
-                label: {
-                    fontSize: "30px"
-                }
+                label: name
             });
             var details = desc;
             bindInfoWindow(marker, map, infoWindow, details);
