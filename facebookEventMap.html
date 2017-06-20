@@ -28,7 +28,7 @@ map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
             var thisEvent = this; //save ref to outer event and dive into nested JSON
             $.each(firstlevel, function(indextwo, secondlevel) {
                 console.log("thisSecondVenue:"+JSON.stringify(secondlevel));
-                $.each(secondlevel, function(indexthree, thirdlevel) {
+                $.each(secondlevel.venue, function(indexthree, thirdlevel) {
                     console.log("thisThirdLocation:"+JSON.stringify(thirdlevel));
                     console.log("lat:"+JSON.stringify(thirdlevel['latitude']));
                     console.log("long:"+JSON.stringify(thirdlevel['longitude']));
