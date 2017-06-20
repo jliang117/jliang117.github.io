@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>Google Maps Marker using External JSON</title>
+<style type="text/css">
+html { height: 100% }
+body { height: 100%; margin: 0; padding: 0 }
+#map_canvas { height: 100% }
+</style>
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src = "https://maps.google.com/maps/api/js?key=AIzaSyDqG3EykPx-745aSR03Yr4WJsvbCWsQpBA&sensor=false">
+
+</script>
+<script type="text/javascript">
+var infoWindow = new google.maps.InfoWindow();
+var map;
+function initialize() {
+var mapOptions = {
+zoom: 13,
+center: new google.maps.LatLng(41.305,-72.913),
+mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+
+
+map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+
+  $.getJSON('fbEventJson.json', function(json1) {
+            $.each(json1.events, function(i, value) {
+                var myLatlng = new google.maps.LatLng(value.location.latitude, value.location.longitude);
+                var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                title: value.name,
+                label:{
+                    fontSize: "30px"
+                }
+                });
+                var details = value.description;
+                bindInfoWindow(marker, map, infoWindow, details);
+            });
+});
+
+
+}
+
+function bindInfoWindow(marker, map, infowindow, strDescription) {
+    google.maps.event.addListener(marker, 'click', function () {
+        infowindow.setContent(strDescription);
+        infowindow.open(map, marker);
+    });
+}
+
+</script>
+</head>
+<body onload="initialize()">
+<form id="form1" runat="server">
+<div id="map_canvas" style="width:100%; height:100%""></div>
+</form>
+</body>
+</html>
