@@ -26,9 +26,9 @@ map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
     $.getJSON('fbEventJson.json', function(json1) {
             $.each(json1.events, function(i, value) {
                     var thisEvent = this; //save ref to outer event and dive into nested JSON
-                    var locations = this.title
+                    var locations = value.title
                     console.log("thisEvent:"+JSON.stringify(thisEvent));
-                    console.log("thisLocation check:"+JSON.stringify(locations))
+                    console.log("thisLocation check nonref:"+JSON.stringify(locations))
                     $.each(locations, function(i, j) {
 
                         var myLatlng = new google.maps.LatLng(j.latitude, j.longitude);
