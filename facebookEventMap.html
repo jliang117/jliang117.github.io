@@ -28,6 +28,7 @@ map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
                     var thisEvent = this; //save ref to outer event and dive into nested JSON
                     var locations = value.location
                     console.log("thisEvent:"+JSON.stringify(thisEvent));
+                    console.log("thisLocation:"+JSON.stringify(locations))
                     $.each(locations, function(i, j) {
 
                         var myLatlng = new google.maps.LatLng(j.latitude, j.longitude);
