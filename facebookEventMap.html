@@ -26,9 +26,10 @@ map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
     $.getJSON('fbEventJson.json', function(json1) {
             $.each(json1.events, function(i, value) {
                     var thisEvent = this; //save ref to outer event and dive into nested JSON
+                    console.log("thisEvent:"+thisEvent);
                     $.each(value.location, function(i, j) {
-                        alert("I:"+i);
-                        alert("J:"+j);
+                        console.log("I:"+i);
+                        console.log("J:"+j);
                         var myLatlng = new google.maps.LatLng(this.latitude, this.longitude);
                         var marker = new google.maps.Marker({
                             position: myLatlng,
