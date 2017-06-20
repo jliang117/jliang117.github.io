@@ -25,13 +25,13 @@ map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
 
     $.getJSON('fbEventJson.json', function(json1) {
         $.each(json1.events, function(indexone, firstlevel) {
-            //console.log("thisSecondVenue:" + JSON.stringify(firstlevel));
-            var lat = JSON.stringify(firstlevel['venue']['location']['latitude'];
-            var long = JSON.stringify(firstlevel['venue']['location']['longitude'];
+            console.log("thisSecondVenue:" + JSON.stringify(firstlevel));
+            var lat = JSON.stringify(firstlevel['venue']['location']['latitude']);
+            var long = JSON.stringify(firstlevel['venue']['location']['longitude']);
             var name = JSON.stringify(firstlevel['name']);
             var desc = JSON.stringify(firstlevel['description']);
-            console.log("thisSecondVenueLong:" + long));
-            console.log("thisSecondVenueLat:" + lat));
+            console.log("thisSecondVenueLong:" + long);
+            console.log("thisSecondVenueLat:" + lat);
             console.log("Name:"+firstlevel['name']);
             console.log("Desc:"+firstlevel['description']);
             var myLatlng = new google.maps.LatLng(lat,long);
