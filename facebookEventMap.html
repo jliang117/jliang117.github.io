@@ -27,10 +27,10 @@ map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
             $.each(json1.events, function(i, value) {
                     var thisEvent = this; //save ref to outer event and dive into nested JSON
                     console.log("thisEvent:"+JSON.stringify(thisEvent));
-                    $.each(value.location, function(i, j) {
+                    $.each(value, function(i, j) {
                         console.log("I:"+i);
                         console.log("J:"+j);
-                        var myLatlng = new google.maps.LatLng(this.latitude, this.longitude);
+                        var myLatlng = new google.maps.LatLng(location.latitude, location.longitude);
                         var marker = new google.maps.Marker({
                             position: myLatlng,
                             map: map,
