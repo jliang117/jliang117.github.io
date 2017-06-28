@@ -82,16 +82,16 @@ def saveScrapeToJson(filename):
   # print(type(sectionData))
   # print(sectionData)
     out = 'Number of divs: %d' % (i)
-  # print(out)
+    print(out)
     i += 1
     paragraphs = sectionData.find_all('p')
     usefulData = paragraphs[1]
-  # print(usefulData)
+    print(usefulData)
     markerText = usefulData.getText()
     firstWord = markerText.split(" ")[0]
     # print(firstWord)
     # markerText = markerText.replace(" ","+")
-    # print(markerText)
+    #print(markerText)
     mapLink = usefulData.find('a').get('href')
   # print(mapLink)
     mapUrlSplit = mapLink.split("/")
