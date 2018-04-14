@@ -72,7 +72,7 @@ def saveScrapeToJson(filename):
   url = 'http://www.thechoosybeggar.com'
   r = requests.get(url,timeout=10)
   soup = BeautifulSoup(r.text,"html5lib")
- #print(soup.find("p", {'class':"lead"}))
+ print(soup.find("div", {'class':"lead"}))
 
 #create markerList
   markerDataList = []
