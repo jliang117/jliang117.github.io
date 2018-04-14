@@ -81,12 +81,10 @@ def saveScrapeToJson(filename):
 #create markerList
   markerDataList = []
   marker_list = []
-  i=1
   for sectionData in soup.find_all("div",class_="entry"):
   # print(type(sectionData))
-   print(sectionData)
+    print(sectionData)
     #print('Number of paragraphs: %d' % (i))
-    i += 1
     paragraphs = sectionData.find_all('p')
     usefulData = paragraphs[1]
     print(usefulData)
