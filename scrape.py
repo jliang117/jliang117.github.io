@@ -87,7 +87,7 @@ def saveScrapeToJson(filename):
     print("Found Paragraph %s:" % usefulData)
     markerText = usefulData.getText()
     print("MarkerText: %s" % markerText)
-    if "map" not in markerText:
+    if "am" not in markerText:
       continue
     firstWord = markerText.split(" ")[0]
     # print(firstWord)
