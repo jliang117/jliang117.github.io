@@ -110,6 +110,6 @@ def saveScrapeToJson(filename):
   with open(filename,'wb') as outfile:
     json.dump(markerDataList,outfile,cls=MyEncoder)
 
-  get_static_google_map("google_map_example3", center=None,zoom=None, imgsize=None, markers=marker_list)
+  get_static_google_map("google_map_example3", center=None,zoom=None, imgsize=(500,500), markers=marker_list)
 
 saveScrapeToJson('scrapeJson.json')
