@@ -87,7 +87,7 @@ def saveScrapeToJson(filename):
     #print('Number of paragraphs: %d' % (i))
     paragraphs = sectionData.find_all('p')
     usefulData = paragraphs[1]
-    print(usefulData)
+    #print(usefulData)
     markerText = usefulData.getText()
     firstWord = markerText.split(" ")[0]
     # print(firstWord)
