@@ -72,16 +72,16 @@ def saveScrapeToJson(filename):
   url = 'http://www.thechoosybeggar.com'
   r = requests.get(url,timeout=10)
   soup = BeautifulSoup(r.text,"html5lib")
- print(soup.find("div", {'class':"content"}))
+ print(soup.find("p", {'class':"lead"}))
 
 #create markerList
   markerDataList = []
   marker_list = []
   i=1
-  for sectionData in soup.find_all('div',class_="entry"):
+  for sectionData in soup.find_all('p',class_="lead"):
   # print(type(sectionData))
   # print(sectionData)
-    out = 'Number of divs: %d' % (i)
+    out = 'Number of paragraphs: %d' % (i)
     print(out)
     i += 1
     paragraphs = sectionData.find_all('p')
