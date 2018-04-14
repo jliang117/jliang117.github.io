@@ -88,6 +88,8 @@ def saveScrapeToJson(filename):
     paragraphs = sectionData.find_all('p')
     usefulData = paragraphs[1]
     #print(usefulData)
+    if(markerText.contains('map')):
+      continue
     markerText = usefulData.getText()
     firstWord = markerText.split(" ")[0]
     # print(firstWord)
