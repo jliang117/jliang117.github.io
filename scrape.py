@@ -68,9 +68,6 @@ class MarkerData():
   def __json__(self):
     return{'title':self.title,'latitude':self.latitude, 'longitude':self.longitude,'description':self.description}
 
-def convertParagraphToMarker(paragraph):
-  print(paragraph)
-
 
 def saveScrapeToJson(filename):
   url = 'http://www.thechoosybeggar.com'
@@ -87,7 +84,7 @@ def saveScrapeToJson(filename):
     #print('Number of paragraphs: %d' % (i))
     paragraphs = sectionData.find_all('p')
     usefulData = paragraphs[1]
-    #print(usefulData)
+    print(usefulData)
     markerText = usefulData.getText()
     if"map" not in markerText:
       continue
