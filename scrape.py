@@ -68,21 +68,24 @@ class MarkerData():
   def __json__(self):
     return{'title':self.title,'latitude':self.latitude, 'longitude':self.longitude,'description':self.description}
 
+def convertParagraphToMarker(paragraph):
+  print(paragraph)
+
+
 def saveScrapeToJson(filename):
   url = 'http://www.thechoosybeggar.com'
   r = requests.get(url,timeout=10)
   soup = BeautifulSoup(r.text,"html5lib")
- print(soup.find("div", {'class':"lead"}))
+ print(soup.find("div", {'class':"entry"}))
 
 #create markerList
   markerDataList = []
   marker_list = []
   i=1
-  for sectionData in soup.find_all('p',class_="lead"):
+  for sectionData in soup.find_all("div",class_="entry"):
   # print(type(sectionData))
-  # print(sectionData)
-    out = 'Number of paragraphs: %d' % (i)
-    print(out)
+   print(sectionData)
+    #print('Number of paragraphs: %d' % (i))
     i += 1
     paragraphs = sectionData.find_all('p')
     usefulData = paragraphs[1]
@@ -98,6 +101,7 @@ def saveScrapeToJson(filename):
     for s in mapUrlSplit:
     # print(s)
       if s.startswith("@"):
+          pass
         latLong = s.split(",")
         latitude = latLong[0][1:]
         longitude = latLong[1]
