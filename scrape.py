@@ -96,7 +96,7 @@ def saveScrapeToJson(filename):
   # print(mapLink)
     mapUrlSplit = mapLink.split("/")
     for s in mapUrlSplit:
-     println(s)
+      println(s)
       if s.startswith("@"):
         latLong = s.split(",")
         latitude = latLong[0][1:]
