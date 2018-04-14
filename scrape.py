@@ -84,19 +84,19 @@ def saveScrapeToJson(filename):
     #print('Number of paragraphs: %d' % (i))
     paragraphs = sectionData.find_all('p')
     usefulData = paragraphs[1]
-    print(usefulData)
+    println("Found Paragraph %s:" usefulData)
     markerText = usefulData.getText()
-    if"map" not in markerText:
+    if "map" not in markerText:
       continue
     firstWord = markerText.split(" ")[0]
     # print(firstWord)
     # markerText = markerText.replace(" ","+")
-    print(markerText)
+    println("MarkerText: %s" markerText)
     mapLink = usefulData.find('a').get('href')
   # print(mapLink)
     mapUrlSplit = mapLink.split("/")
     for s in mapUrlSplit:
-    # print(s)
+     println(s)
       if s.startswith("@"):
         latLong = s.split(",")
         latitude = latLong[0][1:]
