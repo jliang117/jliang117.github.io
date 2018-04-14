@@ -83,7 +83,7 @@ def saveScrapeToJson(filename):
   marker_list = []
   for sectionData in soup.find_all("div",class_="entry"):
   # print(type(sectionData))
-    print(sectionData)
+    #print(sectionData)
     #print('Number of paragraphs: %d' % (i))
     paragraphs = sectionData.find_all('p')
     usefulData = paragraphs[1]
@@ -92,7 +92,7 @@ def saveScrapeToJson(filename):
     firstWord = markerText.split(" ")[0]
     # print(firstWord)
     # markerText = markerText.replace(" ","+")
-    #print(markerText)
+    print(markerText)
     mapLink = usefulData.find('a').get('href')
   # print(mapLink)
     mapUrlSplit = mapLink.split("/")
