@@ -14,8 +14,9 @@ def get_static_google_map(filename_wo_extension, center=None, zoom=None, imgsize
         Creates a request string with a URL like this:
         http://maps.google.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=14&size=512x512&maptype=roadmap
 &markers=color:blue|label:S|40.702147,-74.015794&sensor=false"""
-
-    apiKey='AIzaSyBm3sluCWXvu-s5kZ4ZMIAkcXaY27PduHU'
+    with open('apiKey.txt', 'r') as myfile:
+     data = myfile.read()
+    apiKey=data
     # assemble the URL
     # request =  "http://maps.googleapis.com/maps/api/js?key="+apiKey+"&"
 
