@@ -5,7 +5,6 @@ import cStringIO
 import json
 from PIL import Image
 
-def readApiKey
 
 def get_static_google_map(filename_wo_extension, center=None, zoom=None, imgsize="500x500", maptype="roadmap", markers=None ):
     """retrieve a map (image) from the static google maps server
