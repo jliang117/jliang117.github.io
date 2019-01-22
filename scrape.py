@@ -1,9 +1,9 @@
 from bs4 import BeautifulSoup
 import urllib
 import requests
-import cStringIO
 import json
-from PIL import Image
+import html5lib
+import os
 
 
 def get_static_google_map(filename_wo_extension, center=None, zoom=None, imgsize="500x500", maptype="roadmap", markers=None ):
@@ -14,9 +14,7 @@ def get_static_google_map(filename_wo_extension, center=None, zoom=None, imgsize
         Creates a request string with a URL like this:
         http://maps.google.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=14&size=512x512&maptype=roadmap
 &markers=color:blue|label:S|40.702147,-74.015794&sensor=false"""
-    with open('apiKey.txt', 'r') as myfile:
-     data = myfile.read()
-    apiKey=data
+    apiKey=os.environ['GMAPS_TOKEN']
     # assemble the URL
     # request =  "http://maps.googleapis.com/maps/api/js?key="+apiKey+"&"
 
@@ -45,7 +43,7 @@ def get_static_google_map(filename_wo_extension, center=None, zoom=None, imgsize
 
     #request += "mobile=false&"  # optional: mobile=true will assume the image is shown on a small screen (mobile device)
     request += "sensor=false&"   # must be given, deals with getting loction from mobile device
-    print request
+  
 
 class MyEncoder(json.JSONEncoder):
     """
@@ -108,7 +106,7 @@ def saveScrapeToJson(filename):
         markerDataList.append(MarkerData(firstWord,latitude,longitude,markerText))
 # for marker in marker_list:
 #   print(marker)
-  with open(filename,'wb') as outfile:
+  with open(filename,'w') as outfile:
     json.dump(markerDataList,outfile,cls=MyEncoder)
 
   get_static_google_map("google_map_example3", center=None,zoom=None, imgsize=(500,500), markers=marker_list)
