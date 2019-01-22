@@ -1,0 +1,11 @@
+language: python
+python: 
+  "3.7-dev"
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GH_TOKEN
+  keep-history: true
+  on:
+    branch: master
+script: python3 scrape.py
