@@ -8,4 +8,4 @@ deploy:
   keep-history: true
   on:
     branch: master
-script: scrape.py
+script: python3 scrape.py
