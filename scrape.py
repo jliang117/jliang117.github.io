@@ -79,9 +79,12 @@ def saveScrapeToJson(filename):
   marker_list = []
   for sectionData in soup.find_all("div",class_="entry"):
   # print(type(sectionData))
-    print(sectionData)
-    
+    # print(sectionData)
     paragraphs = sectionData.find_all('p')
+
+    if len(paragraphs) <= 1:  #skip if just one paragraph
+      continue
+
     usefulData = paragraphs[1]
     print("Found Paragraph %s:" % usefulData)
     markerText = usefulData.getText()
