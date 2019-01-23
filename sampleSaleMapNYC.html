@@ -23,7 +23,7 @@ mapTypeId: google.maps.MapTypeId.ROADMAP
 
 map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
 
-  $.getJSON('scrapeJson.json', function(json1) {
+  $.getJSON('pins.json', function(json1) {
             $.each(json1, function(i, value) {
                 var myLatlng = new google.maps.LatLng(value.latitude, value.longitude);
                 var marker = new google.maps.Marker({
