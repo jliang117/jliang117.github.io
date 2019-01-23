@@ -79,8 +79,8 @@ def saveScrapeToJson(filename):
   marker_list = []
   for sectionData in soup.find_all("div",class_="entry"):
   # print(type(sectionData))
-    #print(sectionData)
-    #print('Number of paragraphs: %d' % (i))
+    print(sectionData)
+    
     paragraphs = sectionData.find_all('p')
     usefulData = paragraphs[1]
     print("Found Paragraph %s:" % usefulData)
@@ -109,6 +109,6 @@ def saveScrapeToJson(filename):
   with open(filename,'w') as outfile:
     json.dump(markerDataList,outfile,cls=MyEncoder)
 
-  get_static_google_map("google_map_example3", center=None,zoom=None, imgsize=(500,500), markers=marker_list)
+  # get_static_google_map("google_map_example3", center=None,zoom=None, imgsize=(500,500), markers=marker_list)
 
-saveScrapeToJson('scrapeJson.json')
+saveScrapeToJson('pins.json')
