@@ -1,14 +1,14 @@
 language: python
 python: 
-- "3.7-dev"
+  "3.7-dev"
 deploy:
-- provider: pages
-- skip-cleanup: true
-- github-token: $GH_TOKEN
-- keep-history: true
+  provider: pages
+  skip-cleanup: true
+  github-token: $GH_TOKEN
+  keep-history: true
   on:
     branch: master
 script:
-- python3 scrape.py
+  python3 scrape.py
 after_success:
-- ./push.sh
+  ./push.sh
