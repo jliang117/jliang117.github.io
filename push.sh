@@ -5,6 +5,7 @@ setup_git() {
   git remote add origin https://${GH_TOKEN}github.com/jliang117/jliang117.github.io.git
   git config --global user.email "travis@travis-ci.org"
   git config --global user.name "Travis CI"
+  git config --global push.default simple
   git checkout master
 }
 
