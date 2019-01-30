@@ -1,4 +1,6 @@
 #!/bin/sh
+#update json
+python3 scrape.py
 
 setup_git() {
   echo 'entering setup'

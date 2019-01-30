@@ -9,6 +9,5 @@ deploy:
   on:
     branch: master
 script:
-  python3 scrape.py
   bash push.sh
   
