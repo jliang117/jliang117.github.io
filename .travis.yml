@@ -11,4 +11,4 @@ deploy:
 script:
   python3 scrape.py
 after_success:
-  ./push.sh
+  bash push.sh
