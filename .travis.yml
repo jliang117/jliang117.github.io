@@ -10,5 +10,5 @@ deploy:
     branch: master
 script:
   python3 scrape.py
-after_success:
   bash push.sh
+  
