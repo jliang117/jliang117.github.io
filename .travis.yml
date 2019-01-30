@@ -8,4 +8,7 @@ deploy:
   keep-history: true
   on:
     branch: master
-script: python3 scrape.py
+script:
+  python3 scrape.py
+after_success:
+  ./push.sh
