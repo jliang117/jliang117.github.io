@@ -1,11 +1,23 @@
 language: python
 python: 
-  "3.7-dev"
+- "3.7-dev"
 deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GH_TOKEN
-  keep-history: true
+- provider: pages
+- skip-cleanup: true
+- github-token: $GH_TOKEN
+- keep-history: true
   on:
     branch: master
-script: python3 scrape.py
+script:
+- python3 scrape.py
+after_success:
+- git remote set-url origin git@github.com/jliang117/jliang117.github.io.git
+- git checkout master
+- git config user.name "travis-autoDeploy"
+- git config user.email "liangji117@gmail.com"
+- git add pins.json
+- git status
+- git commit -m "updating pins"
+- git log -5 --pretty=oneline
+- git push
+- 
