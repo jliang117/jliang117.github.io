@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home</title>
+    <description>Central place for info about me</description>
+    <link>http://localhost:4000</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>Sample Sales</title>
+        <description>
+          
+          I check out samples sales occasionally - a good resource has been The Choosy Beggar. The problem for me, was that I was trying to make the most of my frivolity and hit up multiple locations at the same time. Planning out the route was much easier when I could...
+        </description>
+        <pubDate>Wed, 06 Feb 2019 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/2019-02-06-ss-project/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019-02-06-ss-project/</guid>
+      </item>
+    
+      <item>
+        <title>Shutdowns</title>
+        <description>
+          
+          The marker for how ingrained a service or company is within society is its usage in language. I’m sure this is not a new idea, but this seems to be more pervasive now than ever, and the benchmark for what a “unicorn” aspires to be. Terms that have been replaced...
+        </description>
+        <pubDate>Wed, 06 Feb 2019 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/2019-02-06-shutdowns/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019-02-06-shutdowns/</guid>
+      </item>
+    
+  </channel>
+</rss>
