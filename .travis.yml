@@ -9,5 +9,5 @@ deploy:
   on:
     branch: master
 script:
-  bash push.sh
+  bash sampleSaleProject/push.sh
   
