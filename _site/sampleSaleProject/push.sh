@@ -1,5 +1,8 @@
 #!/bin/sh
 #update json
+HOMEDIR=sampleSaleProject
+cd ${HOMEDIR}
+
 python3 scrape.py
 
 push() {
