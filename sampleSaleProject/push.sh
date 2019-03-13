@@ -2,8 +2,6 @@
 #update json
 HOMEDIR=sampleSaleProject
 cd ${HOMEDIR}
-pwd
-ls -la
 
 python3 scrape.py
 
