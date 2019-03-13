@@ -23,11 +23,10 @@ description: Central place for info about me
 
 # List of links in the navigation bar
 navbar-links:
-  # Current Resume: "https://docs.google.com/document/d/1NIDyqv-LBSDQV8QCxYwRBsN96QrL-ftyMcGc83lweYs/edit?usp=sharing"
-  Created Using:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://pages.github.com/"
+  # Created Using:
+  #   - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
+  #   - Learn markdown: "http://www.markdowntutorial.com/"
+  #   - GitHub Pages: "https://pages.github.com/"
   Projects: 
     - Sample Sales: "https://jliang117.github.io/2019-02-06-ss-project/"
     - Reddit Recommendations: "https://github.com/jliang117/redditRecommends"
