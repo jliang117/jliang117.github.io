@@ -62,7 +62,7 @@
   
 
    
-  <meta property="og:description" content="I check out samples sales occasionally - a good resource has been The Choosy Beggar. The problem for me, was that I was trying to make the most of my frivolity and hit up multiple locations at the same time. Planning out the route was much easier when I could...">
+  <meta property="og:description" content="I check out NYC samples sales occasionally - a good resource has been The Choosy Beggar. I had a problem with the way the site separated each sale post and their respective maps, meaning I’d go through multiple clicks back and forth to view each location, and couldn’t plan my...">
   
 
 
@@ -73,8 +73,6 @@
   <link rel="canonical" href="http://localhost:4000/2019-02-06-ss-project/" />
   
 
-  
-  <meta property="og:image" content="http://localhost:4000/img/catShark.jpg" />
   
 
 
@@ -88,11 +86,9 @@
   
 
   
-  <meta name="twitter:description" content="I check out samples sales occasionally - a good resource has been The Choosy Beggar. The problem for me, was that I was trying to make the most of my frivolity and hit up multiple locations at the same time. Planning out the route was much easier when I could...">
+  <meta name="twitter:description" content="I check out NYC samples sales occasionally - a good resource has been The Choosy Beggar. I had a problem with the way the site separated each sale post and their respective maps, meaning I’d go through multiple clicks back and forth to view each location, and couldn’t plan my...">
   
 
-  
-  <meta name="twitter:image" content="http://localhost:4000/img/catShark.jpg" />
   
 
   
@@ -125,16 +121,35 @@
       <ul class="nav navbar-nav navbar-right">
       
         
-          <li>
-            
+          <li class="navlinks-container">
+            <a class="navlinks-parent" href="javascript:void(0)">Projects</a>
+            <div class="navlinks-children">
+              
+                
+                  
 
 
 
 
 
 
-<a href="https://docs.google.com/document/d/1NIDyqv-LBSDQV8QCxYwRBsN96QrL-ftyMcGc83lweYs/edit?usp=sharing">Current Resume</a>
+<a href="https://jliang117.github.io/2019-02-06-ss-project/">Sample Sales</a>
 
+                
+              
+                
+                  
+
+
+
+
+
+
+<a href="https://github.com/jliang117/redditRecommends">Reddit Recommendations</a>
+
+                
+              
+            </div>
           </li>
         
         
@@ -192,14 +207,28 @@
       
 
       <article role="main" class="blog-post">
-        <p>I check out samples sales occasionally - a good resource has been <a href="http://thechoosybeggar.com">The Choosy Beggar</a>.
-The problem for me, was that I was trying to make the most of my frivolity and hit up multiple locations at the same time.
-Planning out the route was much easier when I could visualize all the pins on one map - 
-the site posts sales and locations as they come up.</p>
-
-<p>So the idea was to scrape the site for sales, generate json to create map pins, and place them on a map:</p>
+        <p>I check out NYC samples sales occasionally - a good resource has been <a href="http://thechoosybeggar.com">The Choosy Beggar</a>.
+I had a problem with the way  the site separated each sale post and their respective maps, 
+meaning I’d go through multiple clicks back and forth to view each location, and couldn’t plan my 
+route very well. 
+I realized that figuring out the route was much easier when I could visualize all the pins on one map, 
+so the idea was to scrape the site for sales, generate json map pins, and place them on a static map:</p>
 
 <p><a href="../sampleSaleProject/sampleSaleMapNYC.html">check it out here</a></p>
+
+<p>The content is stored in <code class="highlighter-rouge">pins.json</code>, and a typical pin looks like:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+	title:"",
+	longtitude:"-74.0016897",
+	latitude:"40.7214286",
+	description: "James Perse Weekdays Mon-Thurs 10-6"
+}
+</code></pre></div></div>
+
+<p>There’s a TravisCI daily cronjob that runs the update script and commits the new json file, so this works fairly well!</p>
+
+<p>A useful addition might be to add a hyperlink to the description to the original sale, maybe when I have some extra time…</p>
 
       </article>
 
@@ -241,6 +270,10 @@ the site posts sales and locations as they come up.</p>
           <a href="/2019-02-06-shutdowns/" data-toggle="tooltip" data-placement="top" title="Shutdowns">&larr; Previous Post</a>
         </li>
         
+        
+        <li class="next">
+          <a href="/2019-03-17-resumes/" data-toggle="tooltip" data-placement="top" title="Résumés">Next Post &rarr;</a>
+        </li>
         
       </ul>
 

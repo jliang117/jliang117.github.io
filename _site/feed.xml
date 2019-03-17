@@ -7,10 +7,21 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Résumés</title>
+        <description>
+          
+          Origins (and future) of the Résumé While applying for jobs recently, I’ve been spending lots of time writing and rewriting résumés but it’s hard to evaluate if there’s even much of a payoff for that time invested, and the feeling that this short, almost meaningless document is the only thing...
+        </description>
+        <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/2019-03-17-resumes/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019-03-17-resumes/</guid>
+      </item>
+    
+      <item>
         <title>Sample Sales</title>
         <description>
           
-          I check out samples sales occasionally - a good resource has been The Choosy Beggar. The problem for me, was that I was trying to make the most of my frivolity and hit up multiple locations at the same time. Planning out the route was much easier when I could...
+          I check out NYC samples sales occasionally - a good resource has been The Choosy Beggar. I had a problem with the way the site separated each sale post and their respective maps, meaning I’d go through multiple clicks back and forth to view each location, and couldn’t plan my...
         </description>
         <pubDate>Wed, 06 Feb 2019 00:00:00 +0000</pubDate>
         <link>http://localhost:4000/2019-02-06-ss-project/</link>
@@ -21,7 +32,7 @@
         <title>Shutdowns</title>
         <description>
           
-          The marker for how ingrained a service or company is within society is its usage in language. I’m sure this is not a new idea, but this seems to be more pervasive now than ever, and the benchmark for what a “unicorn” aspires to be. Terms that have been replaced...
+          A rising indicator for how ingrained a service or company is within society could be its usage in language, otherwise known as mind share. I’m sure this is not a new idea, but it seems to be the mark for modern successful companies - aka “unicorns”, with terms that include...
         </description>
         <pubDate>Wed, 06 Feb 2019 00:00:00 +0000</pubDate>
         <link>http://localhost:4000/2019-02-06-shutdowns/</link>
