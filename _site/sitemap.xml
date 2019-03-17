@@ -9,6 +9,10 @@
 <lastmod>2019-02-06T00:00:00+00:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/2019-03-17-resumes/</loc>
+<lastmod>2019-03-17T00:00:00+00:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/aboutme/</loc>
 </url>
 <url>
@@ -16,10 +20,6 @@
 </url>
 <url>
 <loc>http://localhost:4000/tags/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/indexOld.html</loc>
-<lastmod>2019-02-04T17:36:36+00:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/sampleSaleProject/sampleSaleMapNYC.html</loc>
