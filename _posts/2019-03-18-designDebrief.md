@@ -29,7 +29,7 @@ As for the project, there's still plenty of improvements, for one - what's kinda
 
 It's applied to the entire list of comments, and all it really does is call a third party library to extract the entities from a comment(usually a list of sentences). I added in an attempt at consolidation, using the library `jellyfish`, but due to heroku having a 30 second timeout on api calls, the api call suffers from extreme slowness and can't really use this. I'd like to find additional ways to utilize NLP, but currently can't visualize what that would look like. Another improvement would be to consolidate the backend and frontend into a single repository, which requires me figuring out how docker compose interacts with heroku (or any hosting platform really). 
 
-Anyways, here's the proof that I've completed the course, which is what everyone's here for really:
+Anyways, here's the proof that I've completed the course, which is what everyone's really here for:
 
 ![Worth about as much as my degree, really](/img/cert.png)
 
