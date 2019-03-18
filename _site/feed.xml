@@ -7,6 +7,17 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Design Course Debrief</title>
+        <description>
+          
+          Beginning in January, I was involved in taking an introductory Human-Centered Design course, provided by +Acumen and IDEO.org. Going into it, I had a belief that design is central to many creative processes, and was looking to dive a bit more in-depth into the whole process. My only previous experience...
+        </description>
+        <pubDate>Mon, 18 Mar 2019 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/2019-03-18-designDebrief/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019-03-18-designDebrief/</guid>
+      </item>
+    
+      <item>
         <title>Résumés</title>
         <description>
           
