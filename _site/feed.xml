@@ -7,6 +7,17 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Instagram's Magic Spell</title>
+        <description>
+          
+          Mirror mirror on the wall, show me the best of them all. Whenever I’m asked if I have an Instagram, I initially found it hard to reply with something concrete - and I usually just go with “I do, but I don’t”. What does that mean even?! Not sure, but...
+        </description>
+        <pubDate>Mon, 15 Apr 2019 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/2019-04-15-magic/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019-04-15-magic/</guid>
+      </item>
+    
+      <item>
         <title>Design Course Debrief</title>
         <description>
           
