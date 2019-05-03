@@ -7,10 +7,21 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>What is Software Engineering</title>
+        <description>
+          
+          Lately I’ve been interested in what is software engineering, by likening it to aspects of other disciplines. This is primarily written within the context of this blog post as well as a general response to the initial question. To lightly summarize, much of the post discusses various models of software...
+        </description>
+        <pubDate>Thu, 02 May 2019 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/2019-05-02-swe/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019-05-02-swe/</guid>
+      </item>
+    
+      <item>
         <title>Instagram's Magic Spell</title>
         <description>
           
-          Mirror mirror on the wall, show me the best of them all. Whenever I’m asked if I have an Instagram, I initially found it hard to reply with something concrete - and I usually just go with “I do, but I don’t”. What does that mean even?! Not sure, but...
+          Mirror mirror on the wall, show me the best of them all. Whenever I’m asked if I’m on Instagram, I find it hard to reply with something concrete - so I usually go with “I do, but I don’t”. What does that even mean?! Not sure, but I’d like to...
         </description>
         <pubDate>Mon, 15 Apr 2019 00:00:00 +0000</pubDate>
         <link>http://localhost:4000/2019-04-15-magic/</link>
