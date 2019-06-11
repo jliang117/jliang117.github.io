@@ -4,44 +4,6 @@ import json
 import os
 
 
-def get_static_google_map(filename_wo_extension, center=None, zoom=None, imgsize="500x500", maptype="roadmap", markers=None):
-  """retrieve a map (image) from the static google maps server
-
-   See: http://code.google.com/apis/maps/documentation/staticmaps/
-
-      Creates a request string with a URL like this:
-      http://maps.google.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=14&size=512x512&maptype=roadmap
-&markers=color:blue|label:S|40.702147,-74.015794&sensor=false"""
-  apiKey = os.environ['GMAPS_TOKEN']
-  # assemble the URL
-  # request =  "http://maps.googleapis.com/maps/api/js?key="+apiKey+"&"
-
-  request = "http://maps.google.com/maps/api/staticmap?"
-  # request = "http://maps.google.com/maps?"
-  # base URL, append query params, separated by &
-  # if center and zoom  are not given, the map will show all marker locations
-  if center != None:
-    request += "center=%s&" % center
-    # request += "center=%s&" % "40.714728, -73.998672"   # latitude and longitude (up to 6-digits)
-    # request += "center=%s&" % "50011" # could also be a zipcode,
-    # request += "center=%s&" % "Brooklyn+Bridge,New+York,NY"  # or a search term
-  if center != None:
-    # zoom 0 (all of the world scale ) to 22 (single buildings scale)
-    request += "zoom=%i&" % zoom
-
-  request += "size=%ix%i&" % (imgsize)  # tuple of ints, up to 640 by 640
-  request += "maptype=%s&" % maptype  # roadmap, satellite, hybrid, terrain
-
-  # add markers (location and style)
-  if markers != None:
-    for marker in markers:
-      request += "%s&" % marker
-
-  # request += "mobile=false&"  # optional: mobile=true will assume the image is shown on a small screen (mobile device)
-  # must be given, deals with getting loction from mobile device
-  request += "sensor=false&"
-
-
 class MyEncoder(json.JSONEncoder):
   """
   JSONEncoder subclass that leverages an object's `__json__()` method,
@@ -56,7 +18,6 @@ class MyEncoder(json.JSONEncoder):
 
 
 class MarkerData():
-  """docstring for MarkerData"""
 
   def __init__(self, title, latitude, longitude, description):
     self.title = title
@@ -68,18 +29,21 @@ class MarkerData():
     return{'title': self.title, 'latitude': self.latitude, 'longitude': self.longitude, 'description': self.description}
 
 
+
+
 def saveScrapeToJson(filename):
-  url = 'http://www.thechoosybeggar.com'
-  r = requests.get(url, timeout=10)
+  HEADERS = {'User-agent':'sample sale scraper - contact on twitter @j_liang_'}
+  URL = 'http://www.thechoosybeggar.com'
+  r = requests.get(URL, headers=HEADERS, timeout=10)
+
   soup = BeautifulSoup(r.text, "html5lib")
-# print(soup.find("div", {'class':"entry"}))
 
 # create markerList
   markerDataList = []
   marker_list = []
   for sectionData in soup.find_all("div", class_="entry"):
-    # print(type(sectionData))
-    # print(sectionData)
+    print(type(sectionData))
+    print(sectionData)
     paragraphs = sectionData.find_all('p')
 
     if len(paragraphs) <= 1:  # skip if just one paragraph
@@ -109,12 +73,10 @@ def saveScrapeToJson(filename):
                            "|color:0xFFFF00|" + latitude + "," + longitude + "|")
         markerDataList.append(MarkerData(
             firstWord, latitude, longitude, markerText))
-# for marker in marker_list:
-#   print(marker)
+
   with open(filename, 'w') as outfile:
     json.dump(markerDataList, outfile, cls=MyEncoder)
 
-  # get_static_google_map("google_map_example3", center=None,zoom=None, imgsize=(500,500), markers=marker_list)
 
 
 saveScrapeToJson('pins.json')
