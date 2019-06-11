@@ -140,6 +140,7 @@ img {
 }
 .navbar-custom.top-nav-short .navbar-brand-logo {
   padding-top: 5px;
+  padding-left: 5px;
 }
 .navbar-custom.top-nav-short .navbar-brand-logo img {
   height: 40px;
