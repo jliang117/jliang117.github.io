@@ -32,6 +32,26 @@ class MarkerData():
 
 
 def saveScrapeToJson(filename):
+  """
+The site content looks like:
+
+<p class="lead">Tuesday through Friday, 6/4-6/7, 
+  <a href="https://www.260samplesale.com/" rel="noreferrer noopener" target="_blank">260 Sample Sale 
+  </a>hosts 
+  <a href="http://www.montblanc.com/en-us/home.html" rel="noreferrer noopener" target="_blank">Mont Blanc
+  </a>. Watches, writing instruments, leather accessories and jewelry will all be up to 80% off.
+</p>
+
+*usefulData*
+</div>
+<p>Mont Blanc – 260 Fifth Ave btw 28th &amp; 29th – Tues-Thurs 9am-7pm, Fri 9am-12pm – 
+<a href="https://www.google.com/maps/place/260+Sample+Sale/@40.7451863,-73.9895217,17z/data=!3m1!4b1!4m5!3m4!1s0x89c259a63b66ffeb:0x85f1cf2e6ed1fa24!8m2!3d40.7451823!4d-73.987333" 
+rel="noreferrer noopener" target="_blank">Map
+</a>
+</p>:
+
+
+  """
   HEADERS = {'User-agent':'sample sale scraper - contact on twitter @j_liang_'}
   URL = 'http://www.thechoosybeggar.com'
   r = requests.get(URL, headers=HEADERS, timeout=10)
@@ -41,34 +61,28 @@ def saveScrapeToJson(filename):
 # create markerList
   markerDataList = []
   marker_list = []
-  for sectionData in soup.find_all("div", class_="entry"):
-    print(type(sectionData))
-    print(sectionData)
+  for sectionData in soup.find_all("div", class_="entry"): 
+=
     paragraphs = sectionData.find_all('p')
 
     if len(paragraphs) <= 1:  # skip if just one paragraph
       continue
 
     usefulData = paragraphs[1]
-    print("Found Paragraph %s:" % usefulData)
     markerText = usefulData.getText()
-    #print("MarkerText: %s" % markerText)
-    if "am" not in markerText:
+    
+    if "am" not in markerText: # skipping this entry if there's no date
       continue
+
     firstWord = markerText.split(" ")[0]
-    # print(firstWord)
-    # markerText = markerText.replace(" ","+")
+
     mapLink = usefulData.find('a').get('href')
-  # print(mapLink)
     mapUrlSplit = mapLink.split("/")
     for s in mapUrlSplit:
-      print(s)
       if s.startswith("@"):
         latLong = s.split(",")
         latitude = latLong[0][1:]
         longitude = latLong[1]
-        # print("Latitude:"+latitude)
-        # print("Longitude:"+longitude)
         marker_list.append("markers=size:large|label:" + firstWord +
                            "|color:0xFFFF00|" + latitude + "," + longitude + "|")
         markerDataList.append(MarkerData(
