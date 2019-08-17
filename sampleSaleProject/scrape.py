@@ -61,8 +61,7 @@ rel="noreferrer noopener" target="_blank">Map
 # create markerList
   markerDataList = []
   marker_list = []
-  for sectionData in soup.find_all("div", class_="entry"): 
-=
+  for sectionData in soup.find_all("div", class_="entry"):
     paragraphs = sectionData.find_all('p')
 
     if len(paragraphs) <= 1:  # skip if just one paragraph
