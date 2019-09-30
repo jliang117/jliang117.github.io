@@ -3,6 +3,7 @@
 HOMEDIR=sampleSaleProject
 cd ${HOMEDIR}
 
+echo 'scraping...'
 python3 scrape.py
 
 push() {
