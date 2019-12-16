@@ -7,10 +7,43 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Extracting</title>
+        <description>
+          
+          I did fast.ai lesson 2 which involved building your own classifier using images from the internet, and was interested in breaking down how exactly they downloaded images from a google image search (gonna assume it’ll be useful later). They had you perform a search, then scroll enough to load a...
+        </description>
+        <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/2019-11-08-imageExtraction/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019-11-08-imageExtraction/</guid>
+      </item>
+    
+      <item>
+        <title>When are you finished?</title>
+        <description>
+          
+          When is something done? I’ve been on hiatus from posting, but not writing - there are thoughts that I don’t feel like are polished enough to put up on this site, or in other words, to show to nobody. For work, I’ve been keeping a daily log of my TODO...
+        </description>
+        <pubDate>Wed, 19 Jun 2019 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/2019-06-19-finishing/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019-06-19-finishing/</guid>
+      </item>
+    
+      <item>
+        <title>Autobattlers</title>
+        <description>
+          
+          A whole new genre has swept the gaming community, and I’d like to take some time here to discuss what makes this autobattler thing so fun, the current contenders vying for this market, and what the future looks like for each. The race to build the next autochess is super...
+        </description>
+        <pubDate>Wed, 19 Jun 2019 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/2019-06-19-autochess/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019-06-19-autochess/</guid>
+      </item>
+    
+      <item>
         <title>What is Software Engineering</title>
         <description>
           
-          Lately I’ve been interested in what is software engineering, by likening it to aspects of other disciplines. This is primarily written within the context of this blog post as well as a general response to the initial question. To lightly summarize, much of the post discusses various models of software...
+          I’ve lately been trying to clarify what software engineering is. It’s initially logical to evoke and take ideas from other engineering disciplines, where maybe the same question of is it an art, a science, or a craft still exists. But in diving a bit deeper, the lines are fairly blurred,...
         </description>
         <pubDate>Thu, 02 May 2019 00:00:00 +0000</pubDate>
         <link>http://localhost:4000/2019-05-02-swe/</link>
