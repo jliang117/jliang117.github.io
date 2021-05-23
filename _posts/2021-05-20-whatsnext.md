@@ -7,7 +7,7 @@ image: /img/pablo.gif
 
 What is this generation working on?
 
-With the dot com and internet boom, a lot of services and standout startups solved connectivity and linkage issues. The roads between different vertices weren't formed yet, so the pioneers built the social networks, the content streaming services (Spotify, Netflix, etc.), the blogs - the linkage and instant dissemination of culture to the masses. There's a feeling that these roads are fully fleshed (or at least mapped) out, and new spokes on the hub of the internet might have a hard time finding any traction (see clubhouse, possibly nexdoor?) without building over an existing niche (tiktok over vine).
+With the dot com/internet boom, a lot of services and standout startups solved connectivity and linkage issues. The roads between different vertices weren't formed yet, so the pioneers built the social networks, content streaming services (Spotify, Netflix, etc.), blogs - or in other words, the linkage and instant dissemination of culture to the masses. There's a feeling that these roads are fully fleshed (or at least mapped) out, and new spokes on the hub of the internet might have a hard time finding any traction (see clubhouse, possibly nexdoor?) without building over an existing niche (tiktok over vine).
 
 What happens when the roads are all built? One idea might be augmentation - the addition of a fast lane, or in tech's case, an AI augmented lane. Now when we look for funny memes using a GIF keyboard, searching funny autocomplete the *current* idea of funny, without any additional research from the person telling the joke. A more concrete example would be me searching "waiting" and finding (unknown to me) the meme of Pablo Escobar on a swing meme.
 
@@ -21,8 +21,8 @@ It's likely still the case that AI augmenting a bad painter will still result in
 
 *A vision hits me*
 
-The year 2079. Everyone is under some form of UBI with sufficient financial security.
+The year is 2079. Everyone has some form of UBI with sufficient financial security. Manual labor is fully automated, people are highly exposed to various cultures and subcultures, leading to an extremely tolerant, accepting, and educated society. Climate change has receded and the world is now net negative on emissions, and generally everyone is healthier and happier.
 
-Art, creativity, and human connection is reaching grand heights with everyone having their own personal augmented AI muse. Everyone is able to fully and totally express themselves through whatever passion they decide to persue.
+Art, creativity, and human connection is reaching new heights with everyone having their own personal augmented AI muse. Everyone is able to fully and totally express themselves through whatever passion they decide to persue. Collabs are at an all time high, with fully AI muse collabs as an emerging genre of music.
 
 Well the first part was def a pipe dream but maybe not the second? Guess I'll wait for it.
