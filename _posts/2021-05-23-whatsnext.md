@@ -7,17 +7,17 @@ image: /img/pablo.gif
 
 ## What is this generation working on?
 
->(Editied 1/17/2022)
+>(Edited 1/17/2022)
 
 With the dot com/internet boom, a lot of services and standout startups solved connectivity and linkage issues. The roads between different vertices weren't formed yet, so the pioneers built the social networks, content streaming services (Spotify, Netflix, etc.), blogs - or in other words, the links providing near instant dissemination of culture to the masses. There's a feeling that these roads are fully fleshed (or at least mapped) out, and new spokes on the hub of the internet might have a hard time finding any traction (see clubhouse, possibly nextdoor?) without building over an existing niche (tiktok over vine).
 
 What happens when the roads are all built and well traveled? Like with physical roads, we can still make digital roads faster. One speedup might be augmentation - the addition of a fast lane, or in tech's case, an AI assisted lane. Now when we look for funny memes using a GIF keyboard, searching for "funny" results in autocomplete finding the *current* idea of funny, without any additional research from the person telling the joke. Something like how I searched for "waiting" and found the (unknown to me) meme of Pablo Escobar on a swing.
 
-![What was this from? apparently Narcos? idk](https://tenor.com/2pw1.gif)
+![What was this from? apparently Narcos? idk](https://c.tenor.com/-P-xeHYEY9QAAAAd/sad-pablo-lonely.gif)
 
 ### Curation
 
-The link between culture and the individual mind is continously evolving to be clearer and more instantaneous, initially through the one way street of content distribution from media towards the masses, where only an elite few with the knowledge share. So what does the model of a good two way street look like? On a platform like Twitch or Facebook streaming, some roads are completely lopsided - with top streamers taking input from an overwhelming audience. Actually having impact and sometimes even connection can *currently only* mean following a less crowded stream, but could there be a better model? With topic modeling, it's certainly possible to group messages from a massive audience into categories of ideas, then add sorting and filter on mostly valid English (this might not be entirely useful - jargon is extremely widespread in niche communities). Unique patterns of thought can then possibly be rewarded and seen, while the major crowd thoughts can be condensed without taking excessive space. 
+The link between culture and the individual mind is continously evolving to be clearer and more instantaneous, initially through the one way street of content distribution from media towards the masses, where only a select few control and create. So what does the model of a good two way street look like? On a platform like Twitch or Facebook streaming, some roads are completely lopsided - with top streamers taking input from an overwhelming audience. Actually having impact and sometimes even connection can currently *only* mean following a less crowded stream, but could there be a better model? With topic modeling, it's certainly possible to group messages from a massive audience into categories of ideas, then add sorting and filters on mostly valid English (this might not be entirely useful - jargon is extremely widespread in niche communities). Unique patterns of thought can then possibly be rewarded and seen, while the major crowd thoughts can be condensed without taking excessive space. 
 
 ### Augmentation
 
@@ -34,6 +34,6 @@ Next can be art, design, music:
 
 ## Generalizing
 
-How do you view the result of these new AI augmented tools that have come out recently (tiktok's video highlight algorithm, OpenAI GPT3/Codex, etc.)? The tools are only a means to the ends, creator type people will always find a way to get their vision built. Is this the key that unlocks mass adoption and creation? Probably not, but democratizing creation can only bring more visions to life - though it's likely still the case that AI augmenting a bad painter will still result in a bad painting, and same with most creative outliets, but maybe the real win is to get people inspired and collaborating with this sense of "other" that an AI can provide. 
+How do you view the result of these new AI augmented tools that have come out recently (tiktok's video highlight algorithm, OpenAI GPT3/Codex, etc.)? Is this the key that unlocks mass adoption and creation? Probably not, but democratizing creation can only bring more visions to life - though it's likely still the case that AI augmenting a bad painter will still result in a bad painting, and similarly with most creative outlets, but maybe the real win is to get people inspired and collaborating with this sense of "other" that an AI can provide. 
 
 I often regret growing up without musical friends to play with, and am still struggling to find and create those relationships - maybe soon our collaborators could be created and dismissed at will, with an infinite and directed mode of expertise, available at all hours of the day.
