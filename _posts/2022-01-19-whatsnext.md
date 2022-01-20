@@ -7,7 +7,6 @@ image: /img/pablo.gif
 
 ## What is this generation working on?
 
->(Edited 1/17/2022)
 
 With the dot com/internet boom, a lot of services and standout startups solved connectivity and linkage issues. The roads between different vertices weren't formed yet, so the pioneers built the social networks, content streaming services (Spotify, Netflix, etc.), blogs - or in other words, the links providing near instant dissemination of culture to the masses. There's a feeling that these roads are fully fleshed (or at least mapped) out, and new spokes on the hub of the internet might have a hard time finding any traction (see clubhouse, possibly nextdoor?) without building over an existing niche (tiktok over vine).
 
