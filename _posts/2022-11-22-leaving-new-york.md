@@ -1,7 +1,7 @@
 ---
 layout: post
 title: NYC
-image: /img/nyc.jpg
+image: /img/nyc.jpeg
 ---
 
 
