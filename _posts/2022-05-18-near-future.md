@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Near Future
-image: 
+image: /img/ai.jpeg
 ---
 
 What I've shipped:
