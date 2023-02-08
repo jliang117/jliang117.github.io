@@ -13,7 +13,7 @@ I loved this thread on shared spaces in NYC though, will look to check it out wh
 
 Not officially of course - still working for the Man, but that might change soon too...
 
-## Sporadic Thoughts during these times of change
+## Thoughts during these times of change
 
 ### Social Media
 
@@ -23,7 +23,7 @@ What can be done? Reduce the friction of spontaneous posting of photos. Google P
 
 And with the growth of sentiment against the perfect, what’s cool may be becoming less “influencer-y”, and more unfiltered. There's certainly a ton of hate for people who live with a fake online persona, but hate doesn't really cause action, just a feeling of elitism. 
 
-### esta muerte
+### muerte
 
 Death is when there are no connections left. Like garbage collection in a programming language, when all references to a person are gone, can that person truly be alive or within the world? Death is first a mental death, especially for the rich, who are the ones who start to prefer death over the seeming eternity of a monotonous life. I refer to this passage on suicide:
 
@@ -32,9 +32,9 @@ Death is when there are no connections left. Like garbage collection in a progra
 
 ― David Foster Wallace
 
-The question then is, how do buildings start to burn? How do people work themselves into a mental death within their lifetimes - do we see behaviors of suicide in other animals, of martyrdom or heroics, or of sacrifice for the greater good? Suppose it’s truly unique in that only humans commit suicide  when the world is no longer available for them to believe in. Is that what sentience is? How did hope evolve, or what was the reason for it? For all the pagan rituals, blood sacrifices, any superstition, all involve some measure of hope. Culture and tradition then form around it, but that idea is built on the foundations of cause and effect. If I act in this certain way, then rewards will happen. Even basic animals understand that, so do they hope as well? Looking into any puppy's eyes while sitting for a treat can confirm that yes, dogs hope, but why, and how can someone help the people who've forgotten what it's like to look forward again?
+The question then is, how do buildings start to burn? How do people work themselves into a mental death within their lifetimes - do we see behaviors of suicide in other animals, of martyrdom or heroics, or of sacrifice for the greater good? Suppose it’s truly unique in that only humans commit suicide when the world is no longer available for them to believe in. Is that what sentience is? How did hope evolve, or what was the reason for it? For all the pagan rituals, blood sacrifices, any superstition, all involve some measure of hope. Culture and tradition then form around it, but that idea is built on the foundations of cause and effect. If I act in this certain way, then rewards will happen. Even basic animals understand that, so do they hope as well? Looking into any puppy's eyes while sitting for a treat can confirm that yes, dogs hope, but why, and how can someone help the people who've forgotten what it's like to look forward again?
 
 ### slice of life
 
-On a night plane ride from CDMX to sayulita with mo and vera. Just thinking about Fred again, and what an inspiration he’s been to me and people so close to me. There’s a overwhelming amount of shared love for what’s he’s been able to find and create during this time of strangeness in our lives. Also thinking about how going through a flight is much more transformative. Trains may be top as far as calm and peaceful and top for seeing a country for what it really is, as social connections and pathways towards others, but planes feel like rebirth sometimes. Is my body getting ionized by the radiation in the sky, and simultaneously being rebuilt, molecule by molecule? It’’s hard to say, but a plane feels like the modern ritual baptism, or a digital nomad’s confessor. There’s so much of just you available to churn through while over the air. It’s so peaceful being able to noise cancel away within the illuminated tunnels atop the skies.
+On a night plane ride from CDMX to sayulita with mo and vera. Just thinking about Fred again, and what an inspiration he’s been to me and people so close to me. There’s a overwhelming amount of shared love for what’s he’s been able to find and create during this time of strangeness in our lives. Also thinking about how going through a flight is much more transformative. Trains may be top as far as calm and peaceful and top for seeing a country for what it really is, but planes feel like rebirth sometimes. Is my body getting ionized by the radiation in the sky, and simultaneously being rebuilt, molecule by molecule? It’’s hard to say, but a plane feels like to me, a digital nomad’s confessor - the lifting of the window flap, the feeling of just myself noise canceling away in illuminated tunnels atop the clouds, close to heaven.
 
